@@ -1,0 +1,55 @@
+nav, .skip-link {
+    display: none;
+}
+
+a::after {
+    display: block;
+    content: " (" attr(href) ") ";
+}
+
+.cards div, p {
+    page-break-inside: avoid;
+}
+
+.video-container.video-container {
+    width: calc(100% * 0.8);
+    padding-top: calc(56.25% * 0.8);
+    height: 0;
+    position: relative;
+    background-color: black;
+    box-shadow: none;
+    border-radius: 0;
+    margin: 0;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+img {
+    max-width: 80%;
+}
+
+figcaption, caption {
+    text-align: center;
+    padding: .8rem;
+    font-size: small;
+    caption-side: bottom;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    page-break-inside: avoid;
+}
+
+td, th {
+    border-top: 1px solid;
+    padding: .5rem 1rem;
+}

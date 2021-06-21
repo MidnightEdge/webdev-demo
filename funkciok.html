@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funkciók - Blender bemutató</title>
+    <link rel="stylesheet" media="screen" href="style.css">
+    <link rel="stylesheet" media="print" href="print.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Ugrás a tartalomhoz</a>
+    <nav>
+        <p><a href="index.html">Blender bemutató</a></p>
+        <input type="checkbox" id="menubutton"><label for="menubutton" class="hamburger"></label>
+        <input type="checkbox" id="fontsize" onclick="toggleBigFont()"><label for="fontsize">Aa</label>
+        <div id="navlinks">
+            <a href="index.html">Főoldal</a>
+            <a href="funkciok.html" class="active">Funkciók</a>
+            <a href="galeria.html">Galéria</a>
+            <a href="kapcsolat.html">Kapcsolat</a>
+        </div>
+    </nav>
+    <div class="content round" id="main">
+        <header>
+            <h1>Funkciók</h1>
+        </header>
+        <p>
+            A Blender funkcióiról röviden.
+        </p>
+    </div>
+    <div class="content wide cards">
+
+        <div>
+            <img src="media/features/modelling.jpg" alt="3D szerkesztő nézet">
+            <h2>Modellezés</h2>
+            <p>Szobrász mód <i lang="en">(sculpting)</i>, pont alapú modellezés, görbék, és komplex procedurális
+                eszközök
+                segítenek a gyors és
+                hatékony modellezésben.</p>
+        </div>
+        <div>
+            <img src="media/features/materials.jpg" alt="Felületi gráf szerkesztő">
+            <h2> Felületi anyagok</h2>
+            <p>A beépített 2D és 3D textúra festéssel nem kell váltogatni az alkalmazások között a kívánt színezés
+                eléréséhez.
+                Vizuális, <i lang="en">node</i> alapú felületszerkesztő, amely lehetővé teszi a komplex és flexibilis
+                felületek készítését,
+                legyen szó stilizált vagy realisztikus anyagokról.</p>
+        </div>
+        <div> 
+            <img src="media/features/animation.jpg" alt="Animációs görbe szerkesztő">
+            <h2> Animáció</h2>
+            <p>Animációs vázak, automatikus kötés a modellek és a csontvázak között.<br>
+                Manuális és automatikus súlyozó eszközök a finomhangoláshoz.<br>
+                Bármilyen tulajdonság animálható csupán néhány gombnyomással.<br>
+                Procedurális animáció Python szkriptekkel.<br>
+                Különféle fizikai szimulációk.</p>
+        </div>
+        <div>
+            
+            <img src="media/features/rendering.jpg"
+                alt="Egy végeredményként előállított kép. A képen egy társasjáték különböző elemei láthatóak.">
+            <h2> Renderelés</h2>
+            <p>Panorámakép alapú világítás, egyszerű és geometria lámpák, globális illumináció.<br>
+                <i lang="en">Cycles</i> sugárkövető motor a realisztikus eredményekért.<br>
+                <i lang="en">Eevee</i> valós idejű motor, ha gyors és zajmentes képeket szeretnél. Remekül használható
+                előnézethez.
+            </p>
+        </div>
+        <div>
+            
+            <img src="media/features/compositing.jpg" alt="Videóvágó eszköz">
+            <h2> Kompozitkészítés és videószerkesztés</h2>
+            <p>Videófelvételek és generált elemek kombinálása, vágása egyszerűen.<br>
+                Beépített mozgáskövetés és stabilizáció.<br>
+                <i lang="en">Node</i> alapú színkezelés.
+            </p>
+        </div>
+        <div>   
+            <img src="media/features/export.jpg" alt="Export menü">
+            <h2> Import/export</h2>
+            <p>Egyszerű importálás és exportálás számos népszerű formátumba, ezáltal könnyen integrálható csupán
+                részfeladatok elvégzésére is.<br>
+                Támogatás az ismertebb játékmotorokhoz.</p>
+        </div>
+    </div>
+    <footer>©2021 Erdős Csanád</footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

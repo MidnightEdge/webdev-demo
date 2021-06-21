@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galéria - Blender bemutató</title>
+    <link rel="stylesheet" media="screen" href="style.css">
+    <link rel="stylesheet" media="print" href="print.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Ugrás a tartalomhoz</a>
+    <nav>
+        <p><a href="index.html">Blender bemutató</a></p>
+        <input type="checkbox" id="menubutton"><label for="menubutton" class="hamburger"></label>
+        <input type="checkbox" id="fontsize" onclick="toggleBigFont()"><label for="fontsize">Aa</label>
+        <div id="navlinks">
+            <a href="index.html">Főoldal</a>
+            <a href="funkciok.html">Funkciók</a>
+            <a href="galeria.html" class="active">Galéria</a>
+            <a href="kapcsolat.html">Kapcsolat</a>
+        </div>
+    </nav>
+    <div class="content round" id="main">
+        <header>
+            <h1>Galéria</h1>
+            <p>Néhány teljesen vagy részben Blenderrel készült alkotás. A képekre kattintva elérhető a teljes méretű változatuk.</p>
+        </header>
+    </div>
+
+    <div class="gallery cards">
+
+        <div>
+
+            <a href="media/gallery/jad-saber-nightshift.jpg"><img src="media/gallery/thumb/jad-saber-nightshift.jpg"
+                    alt="Egy nő támaszkodik egy kocsinak az esti esőben."></a>
+            <h2>Nightshift - Jad Saber</h2>
+            <p>Forrás: <a href="https://www.artstation.com/artwork/w8a4z6">Artstation</a>
+            </p>
+        </div>
+        <div>
+
+            <div class="video-container">
+                <video aria-describedby="vid-description" src="media/gallery/rayner-alencar-animation.mp4"
+                    poster="media/gallery/thumb/rayner-alencar-animation-poster.jpg" controls loop>
+                </video>
+            </div>
+            <h2>2D animation - Rayner Alencar</h2>
+            <p>
+                Forrás: <a href="https://www.artstation.com/artwork/dOENkA">Artstation</a>
+            </p>
+        </div>
+        <div>
+
+            <a href="media/gallery/joshua-cotter-radio.jpg"><img src="media/gallery/thumb/joshua-cotter-radio.jpg"
+                    alt="High-tech rádió adóvevő hever egy mérnöki munkaasztalon."></a>
+            <h2>MR 3000 - Joshua Cotter</h2>
+            <p>
+                Forrás: <a href="https://www.artstation.com/artwork/XL6eL">Artstation</a>
+            </p>
+        </div>
+        <div>
+
+            <a href="media/gallery/csanad-erdos-eternity4.jpg"><img src="media/gallery/thumb/csanad-erdos-eternity4.jpg"
+                    alt="Napfény csillan egy kőtömbökből épült kapun keresztül egy sivatagban."></a>
+            <h2>[GATE] - Erdős Csanád</h2>
+            <p>
+                Forrás: <a href="https://www.artstation.com/artwork/w68nOw">Artstation</a>
+            </p>
+        </div>
+        <div>
+
+            <a href="media/gallery/gavin-o-donnell-archipelago9.jpg"><img
+                    src="media/gallery/thumb/gavin-o-donnell-archipelago9.jpg"
+                    alt="Magaslati kilátás egy festői tájra, kék tetős épületekkel és hatalmas szélmalmokkal."></a>
+            <h2>Archipelago - Gavin O&#39;donell</h2>
+            <p>
+                Forrás: <a href="https://www.artstation.com/artwork/PoEDn1">Artstation</a>
+            </p>
+        </div>
+        <div>
+
+            <a href="media/gallery/jakub-kowalczyk-concept.jpg"><img
+                    src="media/gallery/thumb/jakub-kowalczyk-concept.jpg"
+                    alt="Viseltes ipari épület tárolásra szánt hordókkal az oldala mellett."></a>
+            <h2>Building concept - Jakub Kowalczyk</h2>
+            <p>
+                Forrás: <a href="https://www.artstation.com/artwork/1n0deK">Artstation</a>
+            </p>
+        </div>
+    </div>
+    <footer>©2021 Erdős Csanád</footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

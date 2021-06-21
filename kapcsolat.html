@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapcsolat - Blender bemutató</title>
+    <link rel="stylesheet" media="screen" href="style.css">
+    <link rel="stylesheet" media="print" href="print.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Ugrás a tartalomhoz</a>
+    <nav>
+        <p><a href="index.html">Blender bemutató</a></p>
+        <input type="checkbox" id="menubutton"><label for="menubutton" class="hamburger"></label>
+        <input type="checkbox" id="fontsize" onclick="toggleBigFont()"><label for="fontsize">Aa</label>
+        <div id="navlinks">
+            <a href="index.html">Főoldal</a>
+            <a href="funkciok.html">Funkciók</a>
+            <a href="galeria.html">Galéria</a>
+            <a href="kapcsolat.html" class="active">Kapcsolat</a>
+        </div>
+    </nav>
+    <div class="content round" id="main">
+        <header>
+            <h1>Kapcsolat</h1>
+        </header>
+        <p>Észrevételed, javaslatod van az oldallal kapcsolatban?
+            Az alábbi űrlap segítségével küldhetsz egy emailt.</p>
+        <form id="emailform">
+
+            <fieldset id="radios">
+                <legend>Címke</legend>
+                <input type="radio" name="subject" id="javaslat" value="Javaslat" checked>
+                <label for="javaslat">Javaslat</label>
+
+                <input type="radio" name="subject" id="hibajelentes" value="Hibajelentés">
+                <label for="hibajelentes">Hibajelentés</label><br>
+
+
+            </fieldset>
+            <p>
+                <label for="targy">Tárgya:</label><br>
+                <input type="text" id="targy" maxlength="100" placeholder="Email tárgya" required>
+            </p>
+            <p>
+                <label for="tartalom">Tartalom:</label><br>
+                <textarea id="tartalom" maxlength="500" placeholder="Tartalom..." required></textarea>
+            </p>
+            <p>
+                <input type="checkbox" id="label" required>
+                <label for="label">Beleegyezem, hogy az elküldött adatokat eltárolják, feldolgozzák</label>
+            </p>
+            <input type="submit" value="Küldés">
+            <input type="reset" value="Alaphelyzet">
+        </form>
+    </div>
+    <footer>©2021 Erdős Csanád</footer>
+    <script src="main.js"></script>
+    <script src="email.js"></script>
+</body>
+
+</html>
